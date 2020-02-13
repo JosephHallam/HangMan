@@ -11,9 +11,7 @@ namespace HangMan_Repository
         public List<char> GuessWord = new List<char>();
         public List<char> WordProgress = new List<char>();
         public List<char> JunkLetter = new List<char>();
-
-
-
+        public string hostHint = "";
         public bool IsDiscovered = false;
         public int GuessChance = 7;
 
@@ -23,6 +21,12 @@ namespace HangMan_Repository
             //Should let host put word into game turn to list of characters.
             Console.WriteLine("Please enter word");
             string hostInput = Console.ReadLine();
+            if (hostInput == "")
+            {
+                hostInput = "Lazy";
+            }
+            Console.WriteLine("Please enter a hint");
+            hostHint = Console.ReadLine();
             hostInput = hostInput.ToLower();
             Console.Clear();
 
@@ -30,8 +34,10 @@ namespace HangMan_Repository
 
             foreach (char letter in charArr)
             {
+              
                 IsDiscovered = false;
                 GuessWord.Add(letter);
+
             }
 
 
@@ -69,6 +75,10 @@ namespace HangMan_Repository
 
 
             string playerTwoInput = Console.ReadLine();
+            if (playerTwoInput == "")
+            {
+                playerTwoInput = "_";
+            }
             playerTwoInput = playerTwoInput.ToLower();
             char TwoInput = playerTwoInput[0];
 

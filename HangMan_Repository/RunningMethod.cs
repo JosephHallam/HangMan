@@ -61,11 +61,17 @@ namespace HangMan_Repository
                     "1. Play New Game\n" +
                     "2. Exit");
 
-                char userInput = Console.ReadLine()[0];
-                Console.Clear();
-                switch (userInput)
+                string userInput = Console.ReadLine();
+                if (userInput == "")
                 {
+                    userInput = " ";
 
+                }
+                char input = userInput[0];
+
+                Console.Clear();
+                switch (input)
+                {
                     case '1':
 
                         _game.HostInputWord();
@@ -78,6 +84,10 @@ namespace HangMan_Repository
                             Console.WriteLine($"The word you wrote is: {userWord}. Is this correct?\n" +
                                 $"Press 1 for yes. Hit any other key for no.");
                             string rightWord = Console.ReadLine();
+                            if (rightWord == "")
+                            {
+                                rightWord = " ";
+                            }
                             switch (rightWord)
                             {
                                 case "1":
@@ -191,6 +201,7 @@ namespace HangMan_Repository
                             string junkList = string.Join(", ", _game.JunkLetter);
                             Console.WriteLine($"Junk Letters \n" +
                                 $"{junkList}");
+                            Console.WriteLine(_game.hostHint);
 
                             _game.PlayerTwoInput_Check();
 
