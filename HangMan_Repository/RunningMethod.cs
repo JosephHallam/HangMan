@@ -238,6 +238,8 @@ namespace HangMan_Repository
                         _game.GuessWord = new List<char>();
                         _game.WordProgress = new List<char>();
                         _game.GuessChance = 7;
+                        _game.JunkLetter = new List<char>();
+
                         break;
 
                     case '2':

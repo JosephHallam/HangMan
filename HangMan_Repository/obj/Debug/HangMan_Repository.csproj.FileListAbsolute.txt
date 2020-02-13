@@ -3,3 +3,8 @@ C:\Users\craig\source\repos\HangMan\HangMan_Repository\bin\Debug\HangMan_Reposit
 C:\Users\craig\source\repos\HangMan\HangMan_Repository\obj\Debug\HangMan_Repository.csprojAssemblyReference.cache
 C:\Users\craig\source\repos\HangMan\HangMan_Repository\obj\Debug\HangMan_Repository.dll
 C:\Users\craig\source\repos\HangMan\HangMan_Repository\obj\Debug\HangMan_Repository.pdb
+C:\ElevenFiftyProjects\EFA Gold Badge Work\HangMan-master\HangMan_Repository\bin\Debug\HangMan_Repository.dll
+C:\ElevenFiftyProjects\EFA Gold Badge Work\HangMan-master\HangMan_Repository\bin\Debug\HangMan_Repository.pdb
+C:\ElevenFiftyProjects\EFA Gold Badge Work\HangMan-master\HangMan_Repository\obj\Debug\HangMan_Repository.csprojAssemblyReference.cache
+C:\ElevenFiftyProjects\EFA Gold Badge Work\HangMan-master\HangMan_Repository\obj\Debug\HangMan_Repository.dll
+C:\ElevenFiftyProjects\EFA Gold Badge Work\HangMan-master\HangMan_Repository\obj\Debug\HangMan_Repository.pdb
